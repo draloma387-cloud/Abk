@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABK Link Shortener</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,22 +16,39 @@
     <form id="shortForm">
 
       <label>Long URL</label>
-      <input id="url" type="url"
-        placeholder="https://example.com/article" required>
+      <input
+        id="url"
+        type="url"
+        placeholder="https://example.com/article"
+        required
+      >
 
       <label>Image URL</label>
-      <input id="image" type="url"
-        placeholder="https://example.com/image.jpg">
+      <input
+        id="image"
+        type="url"
+        placeholder="https://example.com/image.jpg"
+      >
+
+      <div id="imagePreview"></div>
 
       <label>Title</label>
-      <input id="title" type="text"
-        placeholder="Enter title">
+      <input
+        id="title"
+        type="text"
+        placeholder="Enter title"
+        required
+      >
 
       <label>Description</label>
-      <textarea id="description"
-        placeholder="Write description"></textarea>
+      <textarea
+        id="description"
+        placeholder="Write description..."
+      ></textarea>
 
-      <button type="submit">Create Short Link</button>
+      <button type="submit" id="submitBtn">
+        Create Short Link
+      </button>
 
     </form>
 
